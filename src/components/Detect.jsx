@@ -1,9 +1,15 @@
 import React from 'react'
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 
 const Detect = () => {
     const [img, setImg] = useState()
+
+    useEffect(() => {
+        return () => {
+            img && URL.revokeObjectURL(img.preview)
+        }
+    }, [img])
 
     const handlePreviewImg = (e) => {
         const file = e.target.files[0]
