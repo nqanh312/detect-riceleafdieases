@@ -36,8 +36,7 @@ const Detect = () => {
                         <div>
                             <h3 className='font-bold text-lg'>Information</h3>
                             <p className='text-lg pt-2 pb-4'>
-                            The project aims to develop a rice leaf disease classification system to assist farmers 
-                            in timely detection and prevention of secondary diseases in rice fields. Our system allows 
+                            Our system allows 
                             users to collect heterogeneous data collected from multiple sources using a convenient smartphone 
                             camera, providing a visual representation of analysis and prediction results.
                             </p>
