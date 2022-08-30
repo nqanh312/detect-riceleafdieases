@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/detect-riceleafdieases/static/css/main.d4f531b8.css",
+    "main.js": "/detect-riceleafdieases/static/js/main.872c5bb1.js",
+    "static/media/banner_rf.png": "/detect-riceleafdieases/static/media/banner_rf.99b27e0fa6b3fa897c87.png",
+    "index.html": "/detect-riceleafdieases/index.html",
+    "main.d4f531b8.css.map": "/detect-riceleafdieases/static/css/main.d4f531b8.css.map",
+    "main.872c5bb1.js.map": "/detect-riceleafdieases/static/js/main.872c5bb1.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d4f531b8.css",
+    "static/js/main.872c5bb1.js"
+  ]
+}
