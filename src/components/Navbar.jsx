@@ -24,7 +24,7 @@ const Navbar = () => {
                     <button className='border-none bg-transparent text-black mr-4'>Sign In</button>
                     <button className='px-8 py-3'>Sign up</button>
                 </div>
-                <div className='md:hidden' onClick={handleClick}>
+                <div className='md:hidden mr-4' onClick={handleClick}>
                     {!nav ? <FiMenu className='w-5' /> : <CgClose className='w-5' />}
                     
                 </div>
