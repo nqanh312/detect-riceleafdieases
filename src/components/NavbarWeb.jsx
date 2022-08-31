@@ -4,7 +4,7 @@ import { Link, animateScroll as scroll } from 'react-scroll'
 import { FiMenu } from 'react-icons/fi'
 import { CgClose } from 'react-icons/cg'
 
-const Navbar = () => {
+const NavbarWeb = () => {
     const [nav, setNav] = useState(false)
     const handleClick = () => setNav(!nav)
 
@@ -16,12 +16,12 @@ const Navbar = () => {
             <div className='px-2 flex justify-between items-center w-full h-full'>
                 <div className='flex items-center'>
                     <h1 className='text-3xl font-bold mr-4 sm:text-4xl'><Link className="cursor-pointer" to="home" smooth={true} duration={500}>AcademicKnights</Link></h1>
-                    <ul className='hidden md:flex'>
+                    {/* <ul className='hidden md:flex'>
                         <li><Link className="cursor-pointer" to="home" smooth={true} duration={500}>Home</Link></li>
-                        <li><Link className="cursor-pointer" to="about" smooth={true} offset={-200} duration={500}>About</Link></li>
-                        <li><Link className="cursor-pointer" to="allInOne" smooth={true} offset={-200} duration={500}>Detect</Link></li>
+                        <li><Link className="cursor-pointer" to="about" smooth={true} offset={-200} duration={500}>S</Link></li>
+                        <li><Link className="cursor-pointer" to="allInOne" smooth={true} offset={-200} duration={500}>Sign</Link></li>
                         <li><Link className="cursor-pointer" to="footer" smooth={true} offset={-100} duration={500}>Contact Us</Link></li>
-                    </ul>
+                    </ul> */}
                 </div>
                 <div className='hidden md:flex pr-4'>
                     <button className='border-none bg-transparent text-black mr-4'>Sign In</button>
@@ -33,18 +33,18 @@ const Navbar = () => {
                 </div>
             </div>
 
-            <ul className={!nav ? 'hidden' : 'absolute bg-white w-full px-8'}>
+            {/* <ul className={!nav ? 'hidden' : 'absolute bg-zinc-200 w-full px-8'}>
                 <li className='border-b-2 border-zinc-300 w-full cursor-pointer'><Link onClick={handleClose} to="home" smooth={true} duration={500}>Home</Link></li>
                 <li className='border-b-2 border-zinc-300 w-full cursor-pointer'><Link onClick={handleClose} to="about" smooth={true} offset={-200} duration={500}>About</Link></li>
                 <li className='border-b-2 border-zinc-300 w-full cursor-pointer'><Link onClick={handleClose} to="allInOne" smooth={true} offset={-200} duration={500}>Detect now</Link></li>
                 <li className='border-b-2 border-zinc-300 w-full cursor-pointer'><Link onClick={handleClose} to="footer" smooth={true} offset={-100} duration={500}>Contact Us</Link></li>
                 <div className='flex flex-col my-4'>
-                    <button className='bg-transparent text-green-600 px-8 py-3 mb-4'>Sign In</button>
+                    <button className='bg-transparent text-indigo-600 px-8 py-3 mb-4'>Sign In</button>
                     <button className='px-8 py-3'>Sign Up</button>
                 </div>
-            </ul>
+            </ul> */}
         </div>
     )
 }
 
-export default Navbar
+export default NavbarWeb

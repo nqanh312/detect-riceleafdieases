@@ -1,18 +1,26 @@
+import { Routes, Route, Link } from 'react-router-dom'
 import Navbar from './components/Navbar'
-import Hero from './components/Hero'
-import About from './components/About'
-import Detect from './components/Detect'
-import Footer from './components/Footer'
+import NavbarWeb from './components/NavbarWeb'
+import NavbarSign from './components/NavbarSign'
+import HomePage from './pages/Home'
+import Login from './pages/Login'
+import Signup from './pages/Signup'
+
 
 
 function App() {
   return (
     <>
-      <Navbar/>
+    <Navbar/>
+    <Signup/>
+    {/* <NavbarSign/> */}
+    {/* <HomePage /> */}
+    
+      {/* <Navbar/>
       <Hero />
       <About />
       <Detect />
-      <Footer />
+      <Footer /> */}
     </>
   );
 }
