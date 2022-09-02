@@ -4,10 +4,10 @@ import SignupF from '../components/SignupF'
 
 function Signup() {
   return (
-    <>
-      <NavbarSign/>
+    <div name='signup'>
+      {/* <NavbarSign/> */}
       <SignupF />
-    </>
+    </div>
   );
 }
 

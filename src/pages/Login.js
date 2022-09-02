@@ -4,10 +4,10 @@ import Signin from '../components/Signin'
 
 function Login() {
   return (
-    <>
-      <NavbarSign/>
+    <div name='login'>
+      {/* <NavbarSign/> */}
       <Signin />
-    </>
+    </div>
   );
 }
 
