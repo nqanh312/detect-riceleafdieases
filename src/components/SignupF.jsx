@@ -72,7 +72,7 @@ const SignupF = () => {
                             />
                             <label for="terms" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">I agree with the <a href="#" class="text-green-600 hover:underline dark:text-green-500">terms and conditions</a></label>
                         </div>
-                        <a href="#!" className="text-green-800"><b>Sign in </b></a>
+                        <a href="#!" className="text-green-800"><b>Sign in?</b></a>
                     </div>
                     
                     <button type="submit" class="text-white py-3 bg-green-600 hover:bg-green-500 relative text-white focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800">Submit</button>

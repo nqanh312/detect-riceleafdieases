@@ -22,6 +22,7 @@ function App() {
 
   return (
     <>
+
       <div className='z-20 w-screen h-[80px] bg-white fixed'>
         <div className='px-2 flex justify-between items-center w-full h-full'>
           <div className='flex items-center'>
