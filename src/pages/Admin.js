@@ -7,6 +7,8 @@ import New from '../pages/adminpage/new/New'
 import Single from '../pages/adminpage/single/Single'
 import MapDisease from './adminpage/MapDisease'
 import ListDiseases from './adminpage/ListDiseases'
+import ListDetect from './adminpage/ListDetect'
+import Report from './adminpage/Report'
 
 import { productInputs, userInputs } from "../formSource";
 
@@ -60,15 +62,24 @@ function Admin() {
               <span>Diseases</span>
             </li>
           </Link>
+
+          <Link to="/listdetect" style={{ textDecoration: "none" }}>
           <li>
             <CreditCardIcon className="icon" />
             <span>Detection</span>
           </li>
+          </Link>
+
           <p className="title">SERVICE</p>
+
+          <Link to="/report" style={{ textDecoration: "none" }}>
           <li>
             <InsertChartIcon className="icon" />
             <span>Users'report</span>
           </li>
+          </Link>
+
+          
 
           <Link to="/mapdisease" style={{ textDecoration: "none" }}>
           <li>
@@ -93,22 +104,12 @@ function Admin() {
         <Route path="/infouser" element={<Single />} />
         <Route path="/mapdisease" element={<MapDisease />} />
         <Route path="/listdisease" element={<ListDiseases />} />
+        <Route path="/listdetect" element={<ListDetect />} />
+        <Route path="/report" element={<Report />} />
       </Routes>
       </div>
     </div>
 
-    
-
-      {/* <Home />
-      <List />
-      <New inputs={userInputs} title="Add New User" />
-      <Single /> */}
-
-      {/* <Routes>
-        <Route path="/home" element={<HomePage />} />
-        <Route path="/login" element={<Login />} />
-        <Route path="/signup" element={<Signup />} />
-      </Routes> */ }
 
     </>
   );
