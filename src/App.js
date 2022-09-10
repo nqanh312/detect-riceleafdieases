@@ -4,6 +4,7 @@ import NavbarSign from './components/NavbarSign'
 import HomePage from './pages/Home'
 import Login from './pages/Login'
 import Signup from './pages/Signup'
+import Admin from './pages/Admin'
 
 
 import Home from "./pages/adminpage/home/Home";
@@ -31,7 +32,9 @@ function App() {
 
   return (
     <>
-    <Home />
+    {/* <Home /> */}
+
+    <Admin />
 
       {/* <div className='z-20 w-screen h-[80px] bg-white fixed'>
         <div className='px-2 flex justify-between items-center w-full h-full'>

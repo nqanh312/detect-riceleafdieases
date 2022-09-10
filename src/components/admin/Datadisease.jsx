@@ -1,11 +1,11 @@
-import "./datatable.scss";
+import "./datatable/datatable.scss";
 import { DataGrid } from "@mui/x-data-grid";
-import { userColumns, userRows } from "../../../datatablesource";
+import { diseaseColumns, diseaseRows } from "../../datadisease";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 
-const Datatable = () => {
-  const [data, setData] = useState(userRows);
+const Datadisease = () => {
+  const [data, setData] = useState(diseaseRows);
 
   const handleDelete = (id) => {
     setData(data.filter((item) => item.id !== id));
@@ -20,7 +20,7 @@ const Datatable = () => {
         return (
           <div className="cellAction">
             <Link to="/users/test" style={{ textDecoration: "none" }}>
-              <div className="viewButton">View</div>
+              <div className="viewButton">Edit</div>
             </Link>
             <div
               className="deleteButton"
@@ -36,7 +36,7 @@ const Datatable = () => {
   return (
     <div className="datatable">
       <div className="datatableTitle">
-        All Users
+        Disease
         <Link to="/users/new" className="link">
           Add New
         </Link>
@@ -44,7 +44,7 @@ const Datatable = () => {
       <DataGrid
         className="datagrid"
         rows={data}
-        columns={userColumns.concat(actionColumn)}
+        columns={diseaseColumns.concat(actionColumn)}
         pageSize={9}
         rowsPerPageOptions={[9]}
         checkboxSelection
@@ -53,4 +53,4 @@ const Datatable = () => {
   );
 };
 
-export default Datatable;
+export default Datadisease;
