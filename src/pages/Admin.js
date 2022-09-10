@@ -9,6 +9,7 @@ import MapDisease from './adminpage/MapDisease'
 import ListDiseases from './adminpage/ListDiseases'
 import ListDetect from './adminpage/ListDetect'
 import Report from './adminpage/Report'
+import NavbarAdmin from '../components/NavbarAdmin'
 
 import { productInputs, userInputs } from "../formSource";
 
@@ -31,6 +32,7 @@ function Admin() {
     <>
 
     <div className="home">
+      <NavbarAdmin />
     <div className="sidebar">
       <div className="top">
         <Link to="/" style={{ textDecoration: "none" }}>

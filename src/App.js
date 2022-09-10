@@ -12,7 +12,7 @@ import Home from "./pages/adminpage/home/Home";
 import List from "./pages/adminpage/list/List";
 import Single from "./pages/adminpage/single/Single";
 import New from "./pages/adminpage/new/New";
-import { productInputs, userInputs } from "./formSource";
+import { userInputs } from "./formSource";
 import { useContext } from "react";
 
 
@@ -32,11 +32,8 @@ function App() {
 
   return (
     <>
-    {/* <Home /> */}
 
-    <Admin />
-
-      {/* <div className='z-20 w-screen h-[80px] bg-white fixed'>
+      <div className='z-20 w-screen h-[80px] bg-white fixed'>
         <div className='px-2 flex justify-between items-center w-full h-full'>
           <div className='flex items-center'>
             <h1 className='text-3xl font-bold mr-4 sm:text-4xl'><Link className="cursor-pointer" to="home" smooth={true} duration={500}>AcademicKnights</Link></h1>
@@ -57,13 +54,11 @@ function App() {
           </div>
         </ul>
       </div>
-
-
       <Routes>
         <Route path="/home" element={<HomePage />} />
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
-      </Routes> */}
+      </Routes>
 
 
     </>

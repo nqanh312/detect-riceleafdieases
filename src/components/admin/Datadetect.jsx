@@ -36,10 +36,7 @@ const Datadetect = () => {
   return (
     <div className="datatable">
       <div className="datatableTitle">
-        Disease
-        <Link to="/users/new" className="link">
-          Add New
-        </Link>
+        Detect
       </div>
       <DataGrid
         className="datagrid"

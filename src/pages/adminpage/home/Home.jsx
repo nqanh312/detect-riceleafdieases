@@ -15,7 +15,7 @@ const Home = () => {
           <Widget type="detection" />
         </div>
         <div className="charts">
-          <Chart title="Last 6 Months (Detection)" aspect={2.9 / 1} />
+          <Chart title="Last 6 Months (Detection)" aspect={3.5 / 1} />
         </div>
       </div>
     </div>
