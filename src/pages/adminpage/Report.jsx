@@ -6,7 +6,6 @@ const Report = () => {
   return (
     <div className="list">
       <div className="listContainer">
-        <Navbar/>
         <Datareport/>
       </div>
     </div>

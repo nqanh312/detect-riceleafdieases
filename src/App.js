@@ -33,7 +33,7 @@ function App() {
   return (
     <>
 
-      <div className='z-20 w-screen h-[80px] bg-white fixed'>
+      <div className='z-20 w-screen h-[80px] bg-white fixed drop-shadow-lg'>
         <div className='px-2 flex justify-between items-center w-full h-full'>
           <div className='flex items-center'>
             <h1 className='text-3xl font-bold mr-4 sm:text-4xl'><Link className="cursor-pointer" to="home" smooth={true} duration={500}>AcademicKnights</Link></h1>

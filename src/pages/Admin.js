@@ -90,11 +90,12 @@ function Admin() {
           </li>
           </Link>
 
-          <p className="title">Others</p>
+          <p className="title">OTHERS</p>
           <li>
             <ExitToAppIcon className="icon" />
             <span>Logout</span>
           </li>
+
         </ul>
       </div>
     </div>

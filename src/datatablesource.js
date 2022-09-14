@@ -3,11 +3,11 @@ export const userColumns = [
   {
     field: "user",
     headerName: "User",
-    width: 200,
+    width: 130,
     renderCell: (params) => {
       return (
         <div className="cellWithImg">
-          <img className="cellImg" src={params.row.img} alt="avatar" />
+          {/* <img className="cellImg" src={params.row.img} alt="avatar" /> */}
           {params.row.username}
         </div>
       );
@@ -16,7 +16,7 @@ export const userColumns = [
   {
     field: "email",
     headerName: "Email",
-    width: 170,
+    width: 270,
   },
 
   {
@@ -61,78 +61,78 @@ export const userColumns = [
 export const userRows = [
   {
     id: 1,
-    username: "Snow",
-    img: "https://images.pexels.com/photos/1820770/pexels-photo-1820770.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
+    username: "Quynh Anh",
+    // img: "https://images.pexels.com/photos/1820770/pexels-photo-1820770.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
     status: "active",
-    email: "1snow@gmail.com",
-    birthday: "2000-12-12",
-    phone: "0123344456",
-    gender: "male",
-    admin: "Admin"
+    email: "anhnqce160515@fpt.edu.vn",
+    birthday: "2002-11-30",
+    phone: "0813399973",
+    gender: "female",
+    admin: "Yes"
   },
   {
     id: 2,
-    username: "Jamie Lannister",
+    username: "Quoc Khang",
     img: "https://images.pexels.com/photos/1820770/pexels-photo-1820770.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
     status: "active",
-    email: "1snow@gmail.com",
-    birthday: "2000-12-12",
-    phone: "0123344456",
+    email: "khangnqce160234@fpt.edu.vn",
+    birthday: "2002-12-10",
+    phone: "0985873645",
     gender: "male",
-    admin: "No"
+    admin: "Yes"
   },
   {
     id: 3,
-    username: "Lannister",
+    username: "Trong Phuc",
     img: "https://images.pexels.com/photos/1820770/pexels-photo-1820770.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
     status: "active",
-    email: "1snow@gmail.com",
-    birthday: "2000-12-12",
-    phone: "0123344456",
+    email: "phucntce160315@fpt.edu.vn",
+    birthday: "2002-10-10",
+    phone: "0939179803",
     gender: "male",
     admin: "No"
   },
   {
     id: 4,
-    username: "Stark",
+    username: "Hoang Khang",
     img: "https://images.pexels.com/photos/1820770/pexels-photo-1820770.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
     status: "active",
-    email: "1snow@gmail.com",
-    birthday: "2000-12-12",
-    phone: "0123344456",
+    email: "nhkhang1122@gmail.com",
+    birthday: "2003-09-12",
+    phone: "0917767872",
     gender: "male",
     admin: "No"
   },
   {
     id: 5,
-    username: "Targaryen",
+    username: "Tuan Khai",
     img: "https://images.pexels.com/photos/1820770/pexels-photo-1820770.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
     status: "active",
-    email: "1snow@gmail.com",
-    birthday: "2000-12-12",
-    phone: "0123344456",
+    email: "tuankhai512@gmail.com",
+    birthday: "2001-12-23",
+    phone: "0923485218",
     gender: "male",
     admin: "No"
   },
   {
     id: 6,
-    username: "Melisandre",
+    username: "Ha Thien",
     img: "https://images.pexels.com/photos/1820770/pexels-photo-1820770.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
     status: "active",
-    email: "1snow@gmail.com",
-    birthday: "2000-12-12",
-    phone: "0123344456",
+    email: "thiennhse150234@fpt.edu.vn",
+    birthday: "2001-06-12",
+    phone: "0928473528",
     gender: "male",
     admin: "No"
   },
   {
     id: 7,
-    username: "Clifford",
+    username: "Phuoc",
     img: "https://images.pexels.com/photos/1820770/pexels-photo-1820770.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
     status: "active",
-    email: "1snow@gmail.com",
-    birthday: "2000-12-12",
-    phone: "0123344456",
+    email: "trannguyenphuoc1402@gmail.com",
+    birthday: "1995-02-14",
+    phone: "0923238875",
     gender: "male",
     admin: "No"
   },
