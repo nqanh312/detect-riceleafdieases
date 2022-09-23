@@ -1,6 +1,6 @@
 # Getting Started with Create React App
 
-Run [http://localhost:3000/home](http://localhost:3000/home) --> Home page
+Run [http://localhost:3000/home](http://localhost:3000/home) --> Home page 
 
 Run [http://localhost:3000/admin](http://localhost:3000/admin) --> Admin page  
 
