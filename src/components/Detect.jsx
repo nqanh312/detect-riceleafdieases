@@ -76,13 +76,11 @@ const Detect = () => {
 
                         <div>
                             <h3 className='font-bold text-lg text-green-600'>Detect now!</h3>
-<<<<<<< HEAD
                             <p className='text-lg pt-2 pb-4'>
                                 Upload your image
-=======
+                                </p>
                             <p className='text-lg pt-2 pb-4 font-semibold'>
                             Upload image here
->>>>>>> e424c81305003218798ac65b0a69f438a0874c8e
                             </p>
                             <div>
                                 <input

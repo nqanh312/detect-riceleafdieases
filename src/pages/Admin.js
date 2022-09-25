@@ -100,7 +100,7 @@ function Admin() {
         </div> */}
         <div className="homeContainer">
           <Routes>
-            {/* <Route path="/admin1" element={<Sidebar />} /> */}
+            <Route path="/admin1" element={<Sidebar />} />
             <Route path="/admin" element={<Home />} />
             <Route path="/listuser" element={<List />} />
             {/* <Route path="/adduser" element={<New inputs={userInputs} title="Add New User" />} /> */}
@@ -112,82 +112,6 @@ function Admin() {
           </Routes>
         </div>
       </div>
-<<<<<<< HEAD
-=======
-      <hr />
-      <div className="center">
-        <ul>
-          <p className="title">MAIN</p>
-
-          <Link to="/admin" style={{ textDecoration: "none" }}>
-          <li>
-            <DashboardIcon className="icon" />
-            <span>Dashboard</span>
-          </li>
-          </Link>
-
-          <p className="title">LISTS</p>
-          <Link to="/listuser" style={{ textDecoration: "none" }}>
-            <li>
-              <PersonOutlineIcon className="icon" />
-              <span>Users</span>
-            </li>
-          </Link>
-          <Link to="/listdisease" style={{ textDecoration: "none" }}>
-            <li>
-              <StoreIcon className="icon" />
-              <span>Diseases</span>
-            </li>
-          </Link>
-
-          <Link to="/listdetect" style={{ textDecoration: "none" }}>
-          <li>
-            <CreditCardIcon className="icon" />
-            <span>Detection</span>
-          </li>
-          </Link>
-
-          <p className="title">SERVICE</p>
-
-          <Link to="/report" style={{ textDecoration: "none" }}>
-          <li>
-            <InsertChartIcon className="icon" />
-            <span>Users'report</span>
-          </li>
-          </Link>
-
-          
-
-          <Link to="/mapdisease" style={{ textDecoration: "none" }}>
-          <li>
-            <SettingsSystemDaydreamOutlinedIcon className="icon" />
-            <span>Disease map</span>
-          </li>
-          </Link>
-
-          <p className="title">OTHERS</p>
-          <li>
-            <ExitToAppIcon className="icon" />
-            <span>Logout</span>
-          </li>
-
-        </ul>
-      </div>
-    </div>
-      <div className="homeContainer">
-      <Routes>
-        <Route path="/admin" element={<Home />} />
-        <Route path="/listuser" element={<List />} />
-        <Route path="/adduser" element={<New inputs={userInputs} title="Add New User" />} />
-        <Route path="/infouser" element={<Single />} />
-        <Route path="/mapdisease" element={<MapDisease />} />
-        <Route path="/listdisease" element={<ListDiseases />} />
-        <Route path="/listdetect" element={<ListDetect />} />
-        <Route path="/report" element={<Report />} />
-      </Routes>
-      </div>
-    </div>
->>>>>>> e424c81305003218798ac65b0a69f438a0874c8e
 
 
     </>
