@@ -8,6 +8,7 @@ const Single = () => {
   return (
     <div className="single">
       <div className="singleContainer">
+        <Sidebar/>
         <Navbar />
         <div className="top">
           <div className="left">

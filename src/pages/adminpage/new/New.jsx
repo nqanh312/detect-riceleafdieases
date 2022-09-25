@@ -10,6 +10,7 @@ const New = ({ inputs, title }) => {
   return (
     <div className="new">
       <div className="newContainer">
+        <Sidebar/>
         <Navbar />
         <div className="top">
           <h1>{title}</h1>

@@ -21,6 +21,7 @@ const Sidebar = () => {
         <Link to="/" style={{ textDecoration: "none" }}>
           <span className="logo text-green-600">AcademicKnights</span>
         </Link>
+        <a href='/'></a>
       </div>
       <hr />
       <div className="center">
@@ -31,36 +32,50 @@ const Sidebar = () => {
             <span>Dashboard</span>
           </li>
           <p className="title">LISTS</p>
-          <Link to="/users" style={{ textDecoration: "none" }}>
-            <li>
-              <PersonOutlineIcon className="icon" />
-              <span>Users</span>
-            </li>
-          </Link>
-          <Link to="/products" style={{ textDecoration: "none" }}>
+          {/* <Link to="/users" style={{ textDecoration: "none" }}> */}
+          <li>
+            <PersonOutlineIcon className="icon" />
+            <span><a href='/listuser'>Users</a></span>
+          </li>
+
+          {/* <Link to="/listdisease" style={{ textDecoration: "none" }}> */}
             <li>
               <StoreIcon className="icon" />
-              <span>Diseases</span>
+              <span><a href='/listdisease'>Diseases</a></span>
             </li>
-          </Link>
-          <li>
-            <CreditCardIcon className="icon" />
-            <span>Detection</span>
-          </li>
+          {/* </Link> */}
+
+          {/* <Link to="/listdetect" style={{ textDecoration: "none" }}> */}
+            <li>
+              <CreditCardIcon className="icon" />
+              <span><a href='/listdetect'>Detection</a></span>
+            </li>
+          {/* </Link> */}
+
           <p className="title">SERVICE</p>
-          <li>
-            <InsertChartIcon className="icon" />
-            <span>Users'report</span>
-          </li>
-          <li>
-            <SettingsSystemDaydreamOutlinedIcon className="icon" />
-            <span>Disease map</span>
-          </li>
+
+          {/* <Link to="/report" style={{ textDecoration: "none" }}> */}
+            <li>
+              <InsertChartIcon className="icon" />
+              <span><a href='/report'>Users'report</a></span>
+            </li>
+          {/* </Link> */}
+
+
+
+          {/* <Link to="/mapdisease" style={{ textDecoration: "none" }}> */}
+            <li>
+              <SettingsSystemDaydreamOutlinedIcon className="icon" />
+              <span><a href='/mapdisease'>Disease map</a></span>
+            </li>
+          {/* </Link> */}
+
           <p className="title">Others</p>
           <li>
             <ExitToAppIcon className="icon" />
             <span>Logout</span>
           </li>
+
         </ul>
       </div>
     </div>

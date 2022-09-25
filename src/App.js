@@ -7,13 +7,19 @@ import Signup from './pages/Signup'
 import Admin from './pages/Admin'
 
 
-import Home from "./pages/adminpage/home/Home";
-// import Login from "./pages/login/Login";
-import List from "./pages/adminpage/list/List";
-import Single from "./pages/adminpage/single/Single";
-import New from "./pages/adminpage/new/New";
 import { userInputs } from "./formSource";
 import { useContext } from "react";
+
+import Sidebar from './components/admin/sidebar/Sidebar'
+import Home from './pages/adminpage/home/Home'
+import List from './pages/adminpage/list/List'
+import New from './pages/adminpage/new/New'
+import Single from './pages/adminpage/single/Single'
+import MapDisease from './pages/adminpage/MapDisease'
+import ListDiseases from './pages/adminpage/ListDiseases'
+import ListDetect from './pages/adminpage/ListDetect'
+import Report from './pages/adminpage/Report'
+
 
 
 import React, { useState } from 'react'

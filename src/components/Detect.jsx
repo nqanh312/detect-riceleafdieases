@@ -47,9 +47,9 @@ const Detect = () => {
 
 
                         <div>
-                            <h3 className='font-bold text-lg'>Detect now!</h3>
+                            <h3 className='font-bold text-lg text-green-600'>Detect now!</h3>
                             <p className='text-lg pt-2 pb-4'>
-                                Up hình lên chỗ này
+                                Upload your image
                             </p>
                             <div>
                                 <input 
