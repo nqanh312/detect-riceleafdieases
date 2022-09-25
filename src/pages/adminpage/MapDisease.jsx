@@ -4,7 +4,7 @@ import Sidebar from '../../components/admin/sidebar/Sidebar';
 import "./list/list.scss"
 
 const containerStyle = {
-  width: '1300px',
+  width: '1200px',
   height: '650px'
 };
 
