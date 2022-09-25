@@ -55,66 +55,67 @@ export const reportColumns = [
       disease: "Brown Spot",
       img: "http://www.knowledgebank.irri.org/images/stories/brown-spot-3.jpg",
       user: "Quynh Anh",
-      description: "I believe that it's Leaf smuf disease",
-      create: "2022-12-12",
-      status: "Pending"
+      description: "I don't believe that is Brown Spot!",
+      create: "2022-09-13",
+      status: "reject"
+      //Pending, Reject, Accept
     },
     {
       id: 2,
-      disease: "Brown Spot",
-      img: "http://www.knowledgebank.irri.org/images/stories/brown-spot-3.jpg",
-      user: "Quynh Anh",
-      description: "I believe that it's Leaf smuf disease",
-      create: "2022-12-12",
-      status: "Pending"
+      disease: "Tungro",
+      img: "http://www.knowledgebank.irri.org/images/stories/tungro-1.jpg",
+      user: "Quoc Khang",
+      description: "I need more information to prevent this disease",
+      create: "2022-09-10",
+      status: "pending"
     },
     {
       id: 3,
-      disease: "Brown Spot",
-      img: "http://www.knowledgebank.irri.org/images/stories/brown-spot-3.jpg",
-      user: "Quynh Anh",
+      disease: "Bacterial Blight",
+      img: "http://tanthanhco.com.vn/img/img/1(240).jpg",
+      user: "Trong Phuc",
       description: "I believe that it's Leaf smuf disease",
-      create: "2022-12-12",
-      status: "Pending"
+      create: "2022-09-10",
+      status: "reject"
     },
     {
       id: 4,
-      disease: "Brown Spot",
-      img: "http://www.knowledgebank.irri.org/images/stories/brown-spot-3.jpg",
-      user: "Quynh Anh",
-      description: "I believe that it's Leaf smuf disease",
-      create: "2022-12-12",
-      status: "Pending"
+      disease: "Tungro",
+      img: "https://symbio.com.vn/vnt_upload/news/05_2021/thuoc_dac_tri_benh_vang_la_chin_som_hai_lua.jpg",
+      user: "Hoang Khang",
+      description: "I think it's Red Stripe rather than Tungro",
+      create: "2022-09-09",
+      status: "accept"
     },
-    {
-      id: 5,
-      disease: "Brown Spot",
-      img: "http://www.knowledgebank.irri.org/images/stories/brown-spot-3.jpg",
-      user: "Quynh Anh",
-      description: "I believe that it's Leaf smuf disease",
-      create: "2022-12-12",
-      status: "Pending"
-    },
+    // {
+    //   id: 5,
+    //   disease: "Brown Spot",
+    //   img: "http://www.knowledgebank.irri.org/images/stories/brown-spot-3.jpg",
+    //   user: "Nhat Quang",
+    //   description: "I believe that it's Leaf smuf disease",
+    //   create: "2022-12-12",
+    //   status: "Pending"
+    // },
 
-    {
-      id: 6,
-      disease: "Brown Spot",
-      img: "http://www.knowledgebank.irri.org/images/stories/brown-spot-3.jpg",
-      user: "Quynh Anh",
-      description: "I believe that it's Leaf smuf disease",
-      create: "2022-12-12",
-      status: "Reject"
-    },
+    // {
+    //   id: 6,
+    //   disease: "Brown Spot",
+    //   img: "http://www.knowledgebank.irri.org/images/stories/brown-spot-3.jpg",
+    //   user: "Minh Tri",
+    //   description: "I believe that it's Leaf smuf disease",
+    //   create: "2022-12-12",
+    //   status: "Reject"
+    // },
 
-    {
-      id: 7,
-      disease: "Brown Spot",
-      img: "http://www.knowledgebank.irri.org/images/stories/brown-spot-3.jpg",
-      user: "Quynh Anh",
-      description: "I believe that it's Leaf smuf disease",
-      create: "2022-12-12",
-      status: "Approved"
-    },
+    // {
+    //   id: 7,
+    //   disease: "Brown Spot",
+    //   img: "http://www.knowledgebank.irri.org/images/stories/brown-spot-3.jpg",
+    //   user: "Tu My",
+    //   description: "I believe that it's Leaf smuf disease",
+    //   create: "2022-12-12",
+    //   status: "Approved"
+    // },
   ];
   
   

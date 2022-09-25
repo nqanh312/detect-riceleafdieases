@@ -4,6 +4,7 @@ import PersonOutlinedIcon from "@mui/icons-material/PersonOutlined";
 import AccountBalanceWalletOutlinedIcon from "@mui/icons-material/AccountBalanceWalletOutlined";
 import ShoppingCartOutlinedIcon from "@mui/icons-material/ShoppingCartOutlined";
 import MonetizationOnOutlinedIcon from "@mui/icons-material/MonetizationOnOutlined";
+import CreditCardIcon from "@mui/icons-material/CreditCard";
 
 const Widget = ({ type }) => {
   let data;
@@ -35,7 +36,7 @@ const Widget = ({ type }) => {
         isMoney: false,
         link: "View all detections",
         icon: (
-          <ShoppingCartOutlinedIcon
+          <CreditCardIcon
             className="icon"
             style={{
               backgroundColor: "rgba(218, 165, 32, 0.2)",
