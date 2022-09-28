@@ -4,6 +4,8 @@ Run [http://localhost:3000/home](http://localhost:3000/home) --> Home page
 
 Run [http://localhost:3000/admin](http://localhost:3000/admin) --> Admin page    
 
+Run [http://localhost:3000/](http://localhost:3000/) --> Geolocation 
+
 ##
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
