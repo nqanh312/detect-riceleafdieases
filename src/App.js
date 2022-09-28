@@ -28,6 +28,8 @@ import React, { useState } from 'react'
 import { FiMenu } from 'react-icons/fi'
 import { CgClose } from 'react-icons/cg'
 
+import axios from 'axios';
+
 
 
 function App() {
@@ -37,10 +39,10 @@ function App() {
   const handleClose = () => setNav(!nav)
 
   const [returnedData, setReturnedData] = useState(['hello']);
-  const [disease, setDisease] = useState({Name: '', Symptom: '', Treatment: '', Prevention: '', SymptomEn: '', TreatmentEn: '', PreventionEn: '' })
+  const [disease, setDisease] = useState({ Name: '', Symptom: '', Treatment: '', Prevention: '', SymptomEn: '', TreatmentEn: '', PreventionEn: '' })
 
   const setInput = (e) => {
-    const {name, value} = e.target;
+    const { name, value } = e.target;
     console.log(value);
 
     setDisease(prevState => ({
@@ -49,42 +51,72 @@ function App() {
     }));
   }
 
-  const fetchData = async () => {
-   console.log(disease);
-    const newData = await fetch('/api', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-        'Accept': 'application/json'
-      },
-      body: JSON.stringify({
-        name: disease.Name
-      })
-    })
-    .then(res => res.json())
-    console.log(newData);
-    setReturnedData(newData[0])
-  }
+  // const fetchData = async () => {
+  //   console.log(disease);
+  //   const newData = await fetch('/api', {
+  //     method: 'POST',
+  //     headers: {
+  //       'Content-Type': 'application/json',
+  //       'Accept': 'application/json'
+  //     },
+  //     body: JSON.stringify({
+  //       name: disease.Name
+  //     })
+  //   })
+  //     .then(res => res.json())
+  //   console.log(newData);
+  //   setReturnedData(newData[0])
+  // }
 
-  const createDisease = async () => {
-     const newData = await fetch('/hello', {
-       method: 'POST',
-       headers: {
-         'Content-Type': 'application/json',
-         'Accept': 'application/json'
-       },
-       body: JSON.stringify({
-         ...disease
-       })
-     })
-     .then(res => res.json())
-     console.log(newData);
-     setReturnedData(newData[0])
-   }
+  // const createDisease = async () => {
+  //   const newData = await fetch('/hello', {
+  //     method: 'POST',
+  //     headers: {
+  //       'Content-Type': 'application/json',
+  //       'Accept': 'application/json'
+  //     },
+  //     body: JSON.stringify({
+  //       ...disease
+  //     })
+  //   })
+  //     .then(res => res.json())
+  //   console.log(newData);
+  //   setReturnedData(newData[0])
+  // }
+
+  const API_endpoint = `https://api.openweathermap.org/data/2.5/weather?`;
+  const API_key = `f864d85cf435deaa05c43a852d1d854c`
+
+  const [latitude, setLatitude] = React.useState('');
+  const [longitude, setLongitude] = React.useState('');
+  const [responseData, setResponseData] = React.useState({})
+  React.useEffect(() => {
+    navigator.geolocation.getCurrentPosition((position) => {
+      setLatitude(position.coords.latitude);
+      setLongitude(position.coords.longitude);
+    })
+
+    // console.log(`${API_endpoint}lat=${latitude}&lon=${longitude}&exclude=hourly, daily&appid=${API_key}`)
+    let finalAPIEndPoint = `${API_endpoint}lat=${latitude}&lon=${longitude}&exclude=hourly, daily&appid=${API_key}`
+    // console.log(finalAPIEndPoint)
+    axios.get(finalAPIEndPoint)
+      .then((response) => {
+        setResponseData(response.data)
+        console.log(response.data)
+      })
+
+  }, [])
 
 
   return (
     <>
+      <div className='App'>
+        <h1>{responseData.main.temp}</h1>
+        <h1>{responseData.coord.lon}</h1>
+        <h1>{responseData.coord.lat}</h1>
+      </div>
+      
+
       {/* <div className="App">
         <input name="Name" placeholder='Name' onChange={setInput}></input>
         <input name="Symptom" placeholder='Symptom' onChange={setInput}></input>
@@ -105,7 +137,7 @@ function App() {
       </div> */}
 
 
-      <div className='z-20 w-screen h-[80px] bg-white fixed drop-shadow-lg'>
+      {/* <div className='z-20 w-screen h-[80px] bg-white fixed drop-shadow-lg'>
         <div className='px-2 flex justify-between items-center w-full h-full'>
           <div className='flex items-center'>
             <h1 className='text-3xl font-bold mr-4 sm:text-4xl'><Link className="cursor-pointer" to="home" smooth={true} duration={500}>AcademicKnights</Link></h1>
@@ -130,7 +162,9 @@ function App() {
         <Route path="/home" element={<HomePage />} />
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
-      </Routes>
+      </Routes> */}
+
+
 
 
     </>
