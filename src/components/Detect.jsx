@@ -1,5 +1,6 @@
 import React from 'react'
 import { useState, useEffect } from "react";
+import { useGeolocated } from "react-geolocated";
 
 
 const Detect = () => {
@@ -76,9 +77,9 @@ const Detect = () => {
 
                         <div>
                             <h3 className='font-bold text-lg text-green-600'>Detect now!</h3>
-                            <p className='text-lg pt-2 pb-4'>
+                            {/* <p className='text-lg pt-2 pb-4'>
                                 Upload your image
-                                </p>
+                                </p> */}
                             <p className='text-lg pt-2 pb-4 font-semibold'>
                             Upload image here
                             </p>
@@ -92,7 +93,8 @@ const Detect = () => {
                                     <img src={img.preview} alt="" width="600px" />
                                 )}
                             </div>
-                            {/* <button className='p-1 mb-4 mt-3'>Submit</button> */}
+                            <button className='p-1 mb-4 mt-3'>Submit</button>
+                            
                         </div>
                     </div>
 
@@ -111,6 +113,7 @@ const Detect = () => {
                 </p> */}
             </div>
         </div>
+
     )
 }
 

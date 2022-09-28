@@ -13,6 +13,7 @@ import PsychologyOutlinedIcon from "@mui/icons-material/PsychologyOutlined";
 import AccountCircleOutlinedIcon from "@mui/icons-material/AccountCircleOutlined";
 import { Link } from "react-router-dom";
 import { useContext } from "react";
+import disease from '../../../assests/disease.png';
 
 const Sidebar = () => {
   return (
@@ -42,6 +43,7 @@ const Sidebar = () => {
             <li>
               <StoreIcon className="icon" />
               <span><a href='/listdisease'>Diseases</a></span>
+                         
             </li>
           {/* </Link> */}
 
@@ -66,7 +68,13 @@ const Sidebar = () => {
           {/* <Link to="/mapdisease" style={{ textDecoration: "none" }}> */}
             <li>
               <SettingsSystemDaydreamOutlinedIcon className="icon" />
-              <span><a href='/mapdisease'>Disease map</a></span>
+              <span><a href='/mapdisease'>Disease map</a></span>               
+            </li>
+
+            <li>           
+              <p>
+              <img className='w-[130px] pl-2' src={disease} alt="/" />
+              </p>   
             </li>
           {/* </Link> */}
 
