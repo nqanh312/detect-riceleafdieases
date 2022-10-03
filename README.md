@@ -1,3 +1,8 @@
+# About project
+
+Dataset: 13,186
+It consists of 9839 images of diseased leaves of rice consisting of the eight most common diseases namely Bacteria blight, Brown spot, Hispa, Leaf scald, Leaf blast, Leaf smut, Narrow brown spot, and Tungro. There are 3347 images of Healthy leaves.
+
 # Getting Started with Create React App
 
 Run [http://localhost:3000/home](http://localhost:3000/home) --> Home page 
